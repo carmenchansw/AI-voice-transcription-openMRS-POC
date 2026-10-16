@@ -29,3 +29,14 @@ Make sure you have **Docker Desktop** installed and running on your machine.
 ```bash
 git clone [https://github.com/your-username/AI-voice-transcription-openMRS-POC.git](https://github.com/your-username/AI-voice-transcription-openMRS-POC.git)
 cd AI-voice-transcription-openMRS-POC
+
+## 📊 Evaluation Data & Acknowledgements
+
+To benchmark the offline Whisper model's accuracy on medical terminology, this Proof of Concept uses the **United-Syn-Med** dataset hosted on Hugging Face.
+
+@dataset{united_medsyn,
+  title={United-MedSyn: Medical Speech Dataset for ASR},
+  author={United We Care},
+  year={2024},
+  license={CC BY-SA 4.0}
+}
