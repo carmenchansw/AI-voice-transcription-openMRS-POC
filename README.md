@@ -1,2 +1,31 @@
-# AI-voice-transcription-openMRS-POC
-A proof of concept / mini prototype on my approach to the AI voice transcription project by OpenMRS
+# Offline AI Voice Transcription POC for OpenMRS / Bahmni
+
+A lightweight, containerized, offline-capable microservice built with **Python (FastAPI)** and **OpenAI-Whisper** designed to provide secure, local speech-to-text transcription for healthcare environments.
+
+## 🎯 Purpose & Big Picture
+
+In many low-resource or rural clinical settings where OpenMRS and Bahmni are deployed, internet connectivity is intermittent or completely unavailable. This Proof of Concept (POC) ensures that clinical notes can be transcribed locally on-premise without relying on external cloud APIs, guaranteeing:
+* **Strict Data Privacy:** Patient voice data never leaves the local hospital hardware.
+* **Full Offline Capability:** Operates entirely air-gapped without external internet dependencies after initial setup.
+* **Seamless Integration:** Exposes a simple REST API that electronic medical record (EMR) frontends can easily integrate with.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Framework:** FastAPI & Uvicorn (Python 3.11)
+* **AI Engine:** OpenAI-Whisper (`openai-whisper`, PyTorch CPU)
+* **Audio Processing:** FFmpeg
+* **Containerization:** Docker & Docker Desktop (WSL 2 backend)
+
+---
+
+## 🚀 Getting Started & Installation
+
+### Prerequisites
+Make sure you have **Docker Desktop** installed and running on your machine.
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/your-username/AI-voice-transcription-openMRS-POC.git](https://github.com/your-username/AI-voice-transcription-openMRS-POC.git)
+cd AI-voice-transcription-openMRS-POC
