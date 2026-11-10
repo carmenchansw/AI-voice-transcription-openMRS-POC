@@ -45,7 +45,7 @@ for i, row in df.iterrows():
         latency = time.time() - start_time
 
         if response.status_code == 200:
-            prediction = response.json().get("transcription", "")
+            prediction = response.json().get("transcript", "")
             print(f"  -> Prediction:   {prediction}")
             print(f"  -> Latency:      {latency:.3f} seconds")
 
